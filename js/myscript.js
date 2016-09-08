@@ -2,7 +2,6 @@
 
 
 $(document).ready(function(){
- // https://github.com/9bitStudios/wikiblurb
     $.ajax({
         type: "GET",
         url: "http://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page=Jimi_Hendrix&callback=?",
