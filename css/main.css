@@ -1,0 +1,147 @@
+/* Coded by Paliy Rostyslav. e-mail: paliy1984@gmail.com. skype: ros.coprandos  !!!SYLB!!! */
+
+@font-face {
+    font-family: 'Lcchalk';
+    src: url('/fonts/Lcchalk.ttf')
+}
+
+body {
+    background: url(/img/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    padding-top: 16vh;
+    text-align: center;
+    font-family: 'Lcchalk', sans-serif;
+    color: #b3ffd3;
+    font-size: 4vw;
+    font-weight: 600;
+    text-shadow: 0px 3px 5px rgba(90, 87, 87, 0.8);
+}
+
+#search {
+    margin-top: 10vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    margin-bottom: 12vh;
+}
+
+#field {
+    width: 250px;
+    border-radius: 7px 0 0 7px;
+    border: 0;
+}
+
+input[type="text"] {
+    padding-left: 7px;
+}
+
+#searchButton {
+    width: 100px;
+    color: #fff;
+    background: rgb(255, 0, 0);
+    transition: background 0.5s;
+    border-radius: 0 7px 7px 0;
+    border: 0;
+}
+
+#searchButton:hover {
+    background: rgb(167, 0, 0);
+    transition: background 0.5s;
+}
+
+
+.random input {
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 7px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #009f2b;
+    font-size: 18px;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.random input:hover {
+    background: #266537;
+    transition: background 0.5s;
+}
+
+.learn {
+    font-family: 'Lcchalk', sans-serif;
+    text-align: center;
+    padding-top: 14vh;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+#article {
+    text-align: center;
+}
+
+@media all and (max-width: 800px) {
+    h1 {
+        font-size: 6vw;
+    }
+    #field {
+        height: 30px;
+        margin-bottom: 30px;
+    }
+    #searchButton {
+        height: 30px;
+    }
+}
+
+@media all and (max-width: 375px) {
+    #searchButton {
+        border-radius: 7px;
+        width: 160px;
+        height: 40px;
+    }
+    #field{
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    #field {
+        border-radius: 7px;
+    }
+    .learn {
+        padding-top: 120px;
+    }
+    h1 {
+        font-size: 8vw;
+    }
+}
+
+
+/*---------- Clear Fix 001 ----------*/
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
