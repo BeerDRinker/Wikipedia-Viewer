@@ -3,6 +3,7 @@
 <!--Coded by Paliy Rostyslav. e-mail: paliy1984@gmail.com. skype: ros.coprandos !!!SYLB!!!-->
 
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,12 +13,8 @@
     <!--Site description-->
     <meta name="description" content="Wikipedia Viewer" />
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!--Normalize CSS-->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <!--Fonts Avesome-->
-    <link rel="stylesheet" href="libs/fonts-awesome/css/font-awesome.min.css">
     <!--Custom CSS-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
@@ -35,31 +32,43 @@
 
     <h1>Search on Wikipedia</h1>
 
+    <!-- Serch on Mediawiki section -->
+
     <form id="search" action="">
         <input id="field" type="text" autofocus>
         <input id="searchButton" type="button" value="Search">
     </form>
 
+    <!-- Random article section -->
+
     <div class="random">
         <input id="iamlucky" type="button" value="Random article">
     </div>
-    
-     <div id=”article”>
-         
-         
-     </div>
-    
+
+    <section id="article">
+
+        <div id="randomArticleLink"></div>
+
+        <div id="randomArticle"></div>
+
+    </section>
+
+    <ul id="articleList">
+
+    </ul>
+
+    <!-- Footer -->
+
     <div class="learn">
         <p>Wiki Viewer App <br /> Read, learn, practice!</p>
     </div>
-    
-    
+
+
     <!--JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!--Bootstrap JavaScript-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <!--Custom script-->
     <script src="js/myscript.js"></script>
 
 </body>
+
 </html>

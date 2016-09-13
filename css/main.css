@@ -1,5 +1,8 @@
 /* Coded by Paliy Rostyslav. e-mail: paliy1984@gmail.com. skype: ros.coprandos  !!!SYLB!!! */
 
+
+/******* Global section *******/
+
 @font-face {
     font-family: 'Lcchalk';
     src: url('../fonts/Lcchalk.ttf')
@@ -20,6 +23,9 @@ h1 {
     text-shadow: 0px 3px 5px rgba(90, 87, 87, 0.8);
 }
 
+
+/******* Serch on Mediawiki section *******/
+
 #search {
     margin-top: 10vh;
     display: flex;
@@ -33,7 +39,7 @@ h1 {
 
 #field {
     width: 250px;
-    border-radius: 7px 0 0 7px;
+    border-radius: 10px 0 0 10px;
     border: 0;
 }
 
@@ -55,6 +61,54 @@ input[type="text"] {
     transition: background 0.5s;
 }
 
+#searchButton:after {
+    background: rgb(255, 0, 0);
+    transition: background 0.5s;
+}
+
+#articleList {
+    background: #e5f284;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10vh;
+    border: 0;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 18px;
+    list-style-type: none;
+    display: none;
+}
+
+#articleList li {
+    background-color: #00ad49;
+    transition: background-color 0.5s;
+    border-radius: 10px;
+}
+
+#articleList h2 {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#articleList p {
+    padding: 10px 20px;
+}
+
+#articleList a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #000;
+}
+
+#articleList li:hover {
+    background-color: #158b46;
+    transition: background-color 0.5s;
+}
+
+
+/*******  Random article section *******/
 
 .random input {
     display: block;
@@ -75,6 +129,55 @@ input[type="text"] {
     transition: background 0.5s;
 }
 
+#article a {
+    display: block;
+    color: #fff;
+    padding: 20px 0;
+    text-decoration: none;
+}
+
+#article a:hover {
+    text-decoration: none;
+    background: #932222;
+    border-radius: 20px 20px 0 0;
+    transition: background 0.5s;
+}
+
+#randomArticleLink {
+    margin-bottom: 20px;
+    font-size: 26px;
+    background: #777b5b;
+    border-radius: 20px 20px 0 0;
+    transition: background 0.5s;
+}
+
+#article {
+    text-align: center;
+    background: #e5f284;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10vh;
+    border: 0;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    display: none;
+    font-size: 18px;
+}
+
+#article p {
+    font-size: 16px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+#randomArticle ul li {
+    list-style-type: none;
+}
+
+
+/****** Footer section *******/
+
 .learn {
     font-family: 'Lcchalk', sans-serif;
     text-align: center;
@@ -84,9 +187,8 @@ input[type="text"] {
     color: #fff;
 }
 
-#article {
-    text-align: center;
-}
+
+/******* Medium screen size *******/
 
 @media all and (max-width: 800px) {
     h1 {
@@ -99,7 +201,14 @@ input[type="text"] {
     #searchButton {
         height: 30px;
     }
+    #article,
+    #articleList {
+        width: 90%;
+    }
 }
+
+
+/******* Small screen size *******/
 
 @media all and (max-width: 375px) {
     #searchButton {
@@ -107,7 +216,7 @@ input[type="text"] {
         width: 160px;
         height: 40px;
     }
-    #field{
+    #field {
         height: 40px;
         margin-bottom: 20px;
     }
